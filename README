@@ -1,3 +1,8 @@
 My vim dot files in a nice git repository.
 
+
+For syntastic to work pyflakes may be installed :
     $ sudo apt-get install pyflakes
+
+To install clone this repository somewhere and link the vim directory to
+$HOME/vim and the vimrc file to $HOME/.vimrc
