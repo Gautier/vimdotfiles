@@ -42,6 +42,9 @@ let g:ctrlp_map = '<c-]>'
 :let g:ctrlp_match_window_reversed = 0
 :let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
 
+" Nerdtree
+map <leader>n :NERDTreeToggle<CR>
+
 " status line
 set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
 set laststatus=2
