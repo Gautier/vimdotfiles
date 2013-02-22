@@ -1,1 +1,3 @@
 My vim dot files in a nice git repository.
+
+    $ sudo apt-get install pyflakes

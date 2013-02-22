@@ -35,6 +35,13 @@ set pastetoggle=<F2>
 let mapleader = ","
 :map Q <Nop>
 
+" CtrlP settings
+let g:ctrlp_map = '<c-]>'
+
+:let g:ctrlp_match_window_bottom = 0
+:let g:ctrlp_match_window_reversed = 0
+:let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+
 " status line
 set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
 set laststatus=2
@@ -127,4 +134,5 @@ au! BufRead,BufNewFile *.html.mu set filetype=html
 au! BufRead,BufNewFile *.html.mu set filetype=html
 
 " At the end of the file for easiest hot customisation
+map <Leader>sr :source ~/.vimrc<CR>
 map <Leader>tt :!./manage.py test<CR>
